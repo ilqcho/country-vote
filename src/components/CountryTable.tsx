@@ -45,7 +45,7 @@ const CountryTable: React.FC<CountryTableProps> = ({ data, columns }) => {
                 <TableCell>{data.capital_city}</TableCell>
                 <TableCell>{data.region}</TableCell>
                 <TableCell>{data.sub_region}</TableCell>
-                <TableCell>Partly cloudy 19°</TableCell>
+                <TableCell>{data.weather}</TableCell>
                 <TableCell sx={{ width: '40px' }}>{data.votes}</TableCell>
               </TableRow>
             ))}

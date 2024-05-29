@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { setHasVoted } from '../slices/countriesSlice';
 import { Box, Button, Grid, InputAdornment, MenuItem, Paper, TextField, Typography } from '@mui/material';
 import { MOCK_COUNTRIES } from '../mock';
-import type { FormData, TableData } from '../types/types';
+import type { FormData, Country } from '../types/types';
 import { TEXTS } from '../constants/texts';
 
 const VotingForm: React.FC = () => {
@@ -145,7 +145,7 @@ const VotingForm: React.FC = () => {
                       },
                     }}
                   >
-                    {MOCK_COUNTRIES?.map((country: TableData) => (
+                    {MOCK_COUNTRIES?.map((country: Country) => (
                       <MenuItem key={country.name} value={country.name}>
                         {country.name}
                       </MenuItem>

@@ -1,9 +1,5 @@
-export interface TableData {
-    name: string;
-    capital_city: string;
-    region: string;
-    sub_region: string;
-    votes: number;
+export interface TableData extends Country {
+    weather: string;
   }
 
   export interface FormData {
@@ -12,14 +8,14 @@ export interface TableData {
     country: string;
   }
   
-  /*export interface Country {
+  export interface Country {
     name: string;
     official_name: string;
     capital_city: string;
     region: string;
     sub_region: string;
     votes: number;
-  }*/
+  }
   
 
   //Props
